@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservar tutoría · TutoresOn-Line</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="buscar.html"><span class="logo"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z" fill="#1c3336"/><path d="M6 12v4c0 1.5 3 3 6 3s6-1.5 6-3v-4l-6 3-6-3z" fill="#1c3336"/></svg></span>TutoresOn-Line</a>
+    <nav aria-label="Principal">
+      <a href="buscar.html" aria-current="page">Buscar</a>
+      <a href="mis-tutorias.html">Mis tutorías</a>
+      <a href="login.html">Salir</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="card">
+  <p class="volver"><a href="buscar.html">‹ Volver a resultados</a></p>
+  <div class="cabecera">
+    <span class="avatar grande" aria-hidden="true">LM</span>
+    <div>
+      <h1>Laura Méndez</h1>
+      <p class="muted"><span class="estrellas-txt" aria-label="4.9 de 5">★★★★★</span> 4.9 (128 reseñas) · Matemáticas · Barranquilla</p>
+    </div>
+  </div>
+
+  <form data-destino="mis-tutorias.html">
+    <h2 id="t-modalidad">Modalidad</h2>
+    <div class="chips" role="radiogroup" aria-labelledby="t-modalidad">
+      <span class="chip-check"><input type="radio" name="modalidad" id="m-virtual" value="Virtual" checked><label for="m-virtual">Virtual</label></span>
+      <span class="chip-check"><input type="radio" name="modalidad" id="m-presencial" value="Presencial"><label for="m-presencial">Presencial</label></span>
+    </div>
+
+    <h2 id="t-franjas">Franjas disponibles — esta semana</h2>
+    <div class="franjas" role="radiogroup" aria-labelledby="t-franjas">
+      <label class="franja">
+        <span><strong>Lunes</strong><span class="fecha">8 sep</span></span>
+        <input type="radio" name="franja" value="Lunes 8 sep · 3:00 p.m.">
+        <span class="hora">3:00 p.m.</span>
+      </label>
+      <label class="franja">
+        <span><strong>Martes</strong><span class="fecha">9 sep</span></span>
+        <input type="radio" name="franja" value="Martes 9 sep · 5:00 p.m." checked>
+        <span class="hora">5:00 p.m.</span>
+      </label>
+      <label class="franja">
+        <span><strong>Miércoles</strong><span class="fecha">10 sep</span></span>
+        <input type="radio" name="franja" value="Miércoles 10 sep · 4:00 p.m.">
+        <span class="hora">4:00 p.m.</span>
+      </label>
+      <label class="franja">
+        <span><strong>Jueves</strong><span class="fecha">11 sep</span></span>
+        <input type="radio" name="franja" value="Jueves 11 sep · 6:00 p.m.">
+        <span class="hora">6:00 p.m.</span>
+      </label>
+      <label class="franja">
+        <span><strong>Viernes</strong><span class="fecha">12 sep</span></span>
+        <input type="radio" name="franja" value="Viernes 12 sep · 2:00 p.m.">
+        <span class="hora">2:00 p.m.</span>
+      </label>
+      <label class="franja">
+        <span><strong>Sábado</strong><span class="fecha">13 sep</span></span>
+        <input type="radio" name="franja" value="Sábado 13 sep · 10:00 a.m.">
+        <span class="hora">10:00 a.m.</span>
+      </label>
+    </div>
+
+    <div class="resumen" aria-live="polite">
+      <small>Resumen de la reserva</small>
+      <b id="resumen-txt" data-tarifa="$28.000">Martes 9 sep · 5:00 p.m. · Modalidad virtual · 1 hora · $28.000</b>
+    </div>
+    <button class="btn" type="submit">Confirmar y reservar</button>
+  </form>
+</div>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

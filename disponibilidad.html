@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi disponibilidad · TutoresOn-Line</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="panel-tutor.html"><span class="logo"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z" fill="#1c3336"/><path d="M6 12v4c0 1.5 3 3 6 3s6-1.5 6-3v-4l-6 3-6-3z" fill="#1c3336"/></svg></span>TutoresOn-Line</a>
+    <nav aria-label="Principal">
+      <a href="panel-tutor.html">Panel</a>
+      <a href="disponibilidad.html" aria-current="page">Disponibilidad</a>
+      <a href="login.html">Salir</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="card">
+  <div class="cabecera">
+    <span class="avatar grande" aria-hidden="true">LM</span>
+    <div>
+      <h1>Laura Méndez</h1>
+      <p class="muted">Matemáticas · Cálculo · Barranquilla</p>
+    </div>
+  </div>
+  <div class="chips">
+    <span class="tag">Nivel: Bachillerato</span>
+    <span class="tag">Nivel: Universitario</span>
+    <span class="tag">Virtual</span>
+    <span class="tag">Presencial</span>
+  </div>
+
+  <form data-destino="panel-tutor.html">
+    <h2>Mi disponibilidad</h2>
+    <div class="tabla-wrap">
+      <table>
+        <tr>
+          <th></th>
+        <th scope="col" title="lunes">L</th>
+        <th scope="col" title="martes">M</th>
+        <th scope="col" title="miércoles">X</th>
+        <th scope="col" title="jueves">J</th>
+        <th scope="col" title="viernes">V</th>
+        <th scope="col" title="sábado">S</th>
+        <th scope="col" title="domingo">D</th>
+        </tr>
+      <tr>
+        <td>Mañana</td>
+        <td><input type="checkbox" name="manana" value="0" aria-label="Mañana lunes"></td>
+        <td><input type="checkbox" name="manana" value="1" aria-label="Mañana martes" checked></td>
+        <td><input type="checkbox" name="manana" value="2" aria-label="Mañana miércoles"></td>
+        <td><input type="checkbox" name="manana" value="3" aria-label="Mañana jueves"></td>
+        <td><input type="checkbox" name="manana" value="4" aria-label="Mañana viernes" checked></td>
+        <td><input type="checkbox" name="manana" value="5" aria-label="Mañana sábado"></td>
+        <td><input type="checkbox" name="manana" value="6" aria-label="Mañana domingo"></td>
+      </tr>
+      <tr>
+        <td>Tarde</td>
+        <td><input type="checkbox" name="tarde" value="0" aria-label="Tarde lunes" checked></td>
+        <td><input type="checkbox" name="tarde" value="1" aria-label="Tarde martes" checked></td>
+        <td><input type="checkbox" name="tarde" value="2" aria-label="Tarde miércoles"></td>
+        <td><input type="checkbox" name="tarde" value="3" aria-label="Tarde jueves" checked></td>
+        <td><input type="checkbox" name="tarde" value="4" aria-label="Tarde viernes"></td>
+        <td><input type="checkbox" name="tarde" value="5" aria-label="Tarde sábado" checked></td>
+        <td><input type="checkbox" name="tarde" value="6" aria-label="Tarde domingo"></td>
+      </tr>
+      </table>
+    </div>
+    <p class="muted" style="margin:8px 0 16px">Toca una casilla para activar o desactivar esa franja.</p>
+    <button class="btn" type="submit">Guardar disponibilidad</button>
+  </form>
+</div>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

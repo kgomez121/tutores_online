@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar tutores · TutoresOn-Line</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="buscar.html"><span class="logo"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z" fill="#1c3336"/><path d="M6 12v4c0 1.5 3 3 6 3s6-1.5 6-3v-4l-6 3-6-3z" fill="#1c3336"/></svg></span>TutoresOn-Line</a>
+    <nav aria-label="Principal">
+      <a href="buscar.html" aria-current="page">Buscar</a>
+      <a href="mis-tutorias.html">Mis tutorías</a>
+      <a href="login.html">Salir</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="card">
+  <h1>Encuentra tu tutor</h1>
+  <form action="buscar.html" method="get">
+    <label class="sr" for="q">Buscar por materia</label>
+    <input type="text" id="q" name="q" placeholder='Buscar por materia, ej. "Cálculo II"'>
+    <div class="chips">
+      <span class="chip-check"><input type="checkbox" id="f-nivel" name="nivel" value="1"><label for="f-nivel">Nivel: Universitario</label></span>
+      <span class="chip-check"><input type="checkbox" id="f-modalidad" name="modalidad" value="1"><label for="f-modalidad">Modalidad: Virtual</label></span>
+      <span class="chip-check"><input type="checkbox" id="f-ciudad" name="ciudad" value="1"><label for="f-ciudad">Ciudad: Barranquilla</label></span>
+      <span class="chip-check"><input type="checkbox" id="f-rating" name="rating" value="1"><label for="f-rating">★ 4.5+</label></span>
+      <span class="chip-check"><input type="checkbox" id="f-hoy" name="hoy" value="1"><label for="f-hoy">Disponible hoy</label></span>
+    </div>
+    <button class="btn" type="submit">Buscar</button>
+  </form>
+
+  <h2>Resultados</h2>
+  <div>
+    <div class="fila">
+      <span class="avatar" aria-hidden="true">LM</span>
+      <div class="info">
+        <strong>Laura Méndez — Matemáticas</strong>
+        <span class="muted"><span class="estrellas-txt" aria-label="5 de 5">★★★★★</span> (128) · Virtual/Presencial · $28.000/h</span>
+      </div>
+      <a class="btn-out" href="tutor.html">Ver perfil</a>
+    </div>
+    <div class="fila">
+      <span class="avatar" aria-hidden="true">CR</span>
+      <div class="info">
+        <strong>Carlos Rey — Física</strong>
+        <span class="muted"><span class="estrellas-txt" aria-label="4 de 5">★★★★☆</span> (64) · Virtual · $25.000/h</span>
+      </div>
+      <a class="btn-out" href="tutor.html">Ver perfil</a>
+    </div>
+    <div class="fila">
+      <span class="avatar" aria-hidden="true">AP</span>
+      <div class="info">
+        <strong>Ana Puentes — Cálculo</strong>
+        <span class="muted"><span class="estrellas-txt" aria-label="5 de 5">★★★★★</span> (211) · Presencial · $30.000/h</span>
+      </div>
+      <a class="btn-out" href="tutor.html">Ver perfil</a>
+    </div>
+  </div>
+</div>
+</main>
+
+</body>
+</html>
